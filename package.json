@@ -1,0 +1,13 @@
+{
+  "name": "gestion-estudiantes",
+  "version": "1.0.0",
+  "description": "Aplicacion en Node.js para el manejo y procesamiento de un arreglo de objetos de estudiantes universitarios.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "demo": "node demo.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

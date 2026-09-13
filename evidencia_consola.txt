@@ -1,0 +1,238 @@
+=== 1. lista completa ===
+[
+  {
+    id: 1,
+    nombre: 'Ana Torres',
+    carrera: 'Ingeniería de Sistemas',
+    semestre: 3,
+    notas: [ 4.2, 3.8, 4.5 ]
+  },
+  {
+    id: 2,
+    nombre: 'Carlos Ruiz',
+    carrera: 'Ingeniería Industrial',
+    semestre: 5,
+    notas: [ 2.5, 3, 2.8 ]
+  },
+  {
+    id: 3,
+    nombre: 'Laura Gómez',
+    carrera: 'Ingeniería de Sistemas',
+    semestre: 5,
+    notas: [ 4.8, 4.9, 5 ]
+  },
+  {
+    id: 4,
+    nombre: 'Pedro Sánchez',
+    carrera: 'Ingeniería Civil',
+    semestre: 2,
+    notas: [ 3.2, 3.5, 2.9 ]
+  },
+  {
+    id: 5,
+    nombre: 'María Fernández',
+    carrera: 'Ingeniería Industrial',
+    semestre: 3,
+    notas: [ 2, 2.5, 2.2 ]
+  },
+  {
+    id: 6,
+    nombre: 'Jorge Ramírez',
+    carrera: 'Ingeniería Civil',
+    semestre: 5,
+    notas: [ 4, 3.9, 4.1 ]
+  },
+  {
+    id: 7,
+    nombre: 'Sofía Martínez',
+    carrera: 'Ingeniería de Sistemas',
+    semestre: 2,
+    notas: [ 3.5, 3.6, 3.4 ]
+  },
+  {
+    id: 8,
+    nombre: 'Diego López',
+    carrera: 'Ingeniería Industrial',
+    semestre: 5,
+    notas: [ 2.9, 2.7, 3 ]
+  }
+]
+
+=== 2. buscar por id (3) ===
+{
+  id: 3,
+  nombre: 'Laura Gómez',
+  carrera: 'Ingeniería de Sistemas',
+  semestre: 5,
+  notas: [ 4.8, 4.9, 5 ]
+}
+
+=== 3. buscar por nombre (ra) ===
+[
+  {
+    id: 3,
+    nombre: 'Laura Gómez',
+    carrera: 'Ingeniería de Sistemas',
+    semestre: 5,
+    notas: [ 4.8, 4.9, 5 ]
+  },
+  {
+    id: 6,
+    nombre: 'Jorge Ramírez',
+    carrera: 'Ingeniería Civil',
+    semestre: 5,
+    notas: [ 4, 3.9, 4.1 ]
+  }
+]
+
+=== 4. filtrar por carrera (Ingenieria de Sistemas) ===
+[
+  {
+    id: 1,
+    nombre: 'Ana Torres',
+    carrera: 'Ingeniería de Sistemas',
+    semestre: 3,
+    notas: [ 4.2, 3.8, 4.5 ]
+  },
+  {
+    id: 3,
+    nombre: 'Laura Gómez',
+    carrera: 'Ingeniería de Sistemas',
+    semestre: 5,
+    notas: [ 4.8, 4.9, 5 ]
+  },
+  {
+    id: 7,
+    nombre: 'Sofía Martínez',
+    carrera: 'Ingeniería de Sistemas',
+    semestre: 2,
+    notas: [ 3.5, 3.6, 3.4 ]
+  }
+]
+
+=== 5. filtrar por semestre (5) ===
+[
+  {
+    id: 2,
+    nombre: 'Carlos Ruiz',
+    carrera: 'Ingeniería Industrial',
+    semestre: 5,
+    notas: [ 2.5, 3, 2.8 ]
+  },
+  {
+    id: 3,
+    nombre: 'Laura Gómez',
+    carrera: 'Ingeniería de Sistemas',
+    semestre: 5,
+    notas: [ 4.8, 4.9, 5 ]
+  },
+  {
+    id: 6,
+    nombre: 'Jorge Ramírez',
+    carrera: 'Ingeniería Civil',
+    semestre: 5,
+    notas: [ 4, 3.9, 4.1 ]
+  },
+  {
+    id: 8,
+    nombre: 'Diego López',
+    carrera: 'Ingeniería Industrial',
+    semestre: 5,
+    notas: [ 2.9, 2.7, 3 ]
+  }
+]
+
+=== 6. promedio de un estudiante (id 2) ===
+{
+  id: 2,
+  nombre: 'Carlos Ruiz',
+  carrera: 'Ingeniería Industrial',
+  semestre: 5,
+  notas: [ 2.5, 3, 2.8 ],
+  promedio: 2.77
+}
+
+=== 7. aprobados ===
+[
+  {
+    id: 1,
+    nombre: 'Ana Torres',
+    carrera: 'Ingeniería de Sistemas',
+    semestre: 3,
+    notas: [ 4.2, 3.8, 4.5 ],
+    promedio: 4.17
+  },
+  {
+    id: 3,
+    nombre: 'Laura Gómez',
+    carrera: 'Ingeniería de Sistemas',
+    semestre: 5,
+    notas: [ 4.8, 4.9, 5 ],
+    promedio: 4.9
+  },
+  {
+    id: 4,
+    nombre: 'Pedro Sánchez',
+    carrera: 'Ingeniería Civil',
+    semestre: 2,
+    notas: [ 3.2, 3.5, 2.9 ],
+    promedio: 3.2
+  },
+  {
+    id: 6,
+    nombre: 'Jorge Ramírez',
+    carrera: 'Ingeniería Civil',
+    semestre: 5,
+    notas: [ 4, 3.9, 4.1 ],
+    promedio: 4
+  },
+  {
+    id: 7,
+    nombre: 'Sofía Martínez',
+    carrera: 'Ingeniería de Sistemas',
+    semestre: 2,
+    notas: [ 3.5, 3.6, 3.4 ],
+    promedio: 3.5
+  }
+]
+
+=== 8. reprobados ===
+[
+  {
+    id: 2,
+    nombre: 'Carlos Ruiz',
+    carrera: 'Ingeniería Industrial',
+    semestre: 5,
+    notas: [ 2.5, 3, 2.8 ],
+    promedio: 2.77
+  },
+  {
+    id: 5,
+    nombre: 'María Fernández',
+    carrera: 'Ingeniería Industrial',
+    semestre: 3,
+    notas: [ 2, 2.5, 2.2 ],
+    promedio: 2.23
+  },
+  {
+    id: 8,
+    nombre: 'Diego López',
+    carrera: 'Ingeniería Industrial',
+    semestre: 5,
+    notas: [ 2.9, 2.7, 3 ],
+    promedio: 2.87
+  }
+]
+
+=== 9. reporte general ===
+{
+  totalEstudiantes: 8,
+  promedioGeneral: 3.46,
+  totalAprobados: 5,
+  totalReprobados: 3,
+  porCarrera: {
+    'Ingeniería de Sistemas': 3,
+    'Ingeniería Industrial': 3,
+    'Ingeniería Civil': 2
+  }
+}
