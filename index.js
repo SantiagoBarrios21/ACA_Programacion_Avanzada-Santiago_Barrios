@@ -1,4 +1,4 @@
-// index.js
+
 // servidor con express que expone las funciones de funciones.js
 
 const express = require('express');
