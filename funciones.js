@@ -1,6 +1,6 @@
-// funciones.js
+
 // aca van todas las funciones para manejar el arreglo de estudiantes
-// nota: no usar filter, map, forEach, reduce ni find, solo for/while/if/ternario
+
 
 const NOTA_MINIMA = 3.0;
 
@@ -99,7 +99,7 @@ function obtenerAprobados(lista) {
   return resultado;
 }
 
-// devuelve los estudiantes que no pasaron (promedio < 3.0)
+// devuelve los estudiantes que no pasaron 
 function obtenerReprobados(lista) {
   const resultado = [];
   for (let i = 0; i < lista.length; i++) {
